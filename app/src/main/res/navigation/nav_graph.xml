@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeScreenFrag">
+
+    <fragment
+        android:id="@+id/welcomeScreenFrag"
+        android:name="edu.quinnipiac.ser210.com.hfad.assignment2.WelcomeScreenFrag"
+        android:label="fragment_welcome_screen"
+        tools:layout="@layout/fragment_welcome_screen" >
+        <action
+            android:id="@+id/action_welcomeScreenFrag_to_gameFrag"
+            app:destination="@id/gameFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFrag"
+        android:name="edu.quinnipiac.ser210.com.hfad.assignment2.FourInARowFrag"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <argument
+            android:name="message"
+            app:argType="string" />
+    </fragment>
+</navigation>

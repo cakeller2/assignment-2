@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">assignment2</string>
+    <string name="title">Welcome to Four in a Row!</string>
+    <string name="directions">Your goal as the blue player is get 4 in a row on a 6x6 board. Click the spot you want to go on when it is your turn. Don\'t click on a filled space or that will count as your turn! Put in your username and hit the button to begin. </string>
+    <string name="message_hint">Username</string>
+    <string name="player_win">You won!
+    Wanna play again?</string>
+</resources>
